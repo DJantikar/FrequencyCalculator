@@ -4,10 +4,25 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+/*
+ * @Author : Deepa Gopalrao
+ * 
+ * Problem : Count characters' frequency in given string and also find highest frequency character lexicographically.
+ * 
+ * Solution : Parse the given string in linear and compute frequency using TreeMap .
+ * 			  To find highest frequency character construct priority queue with comparator to check for same frequency case.
+ * 
+ * Time Complexity : O(n) because we are parsing string in linear time
+ * Space Complexity : O(n) because we are storing entries in TreeMap and PriorityQueue which is 2*n .Hence O(n).
+ * 
+ * Example given at the end of the program .
+ * 			  
+ */
 class FrequencyComparator implements Comparator<Entry<Character, Integer>>{
 
 	@Override
 	public int compare(Entry<Character, Integer> entry1, Entry<Character, Integer> entry2) {
+		// Case : Two characters have same frequency 
 		if(entry1.getValue() == entry2.getValue())
 			return entry1.getKey().compareTo(entry2.getKey());
 		else
@@ -48,3 +63,9 @@ public class CountCharacters {
 	}
 
 }
+
+/*Please enter string : 
+google
+Frequency of each character lexicographically  : {e=1, g=2, l=1, o=2}
+-------------------------------------------------------------------------
+Highest frequency character lexicographically is 'g' with frequency 2.*/
