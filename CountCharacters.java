@@ -64,8 +64,12 @@ public class CountCharacters {
 
 }
 
-/*Please enter string : 
+/*
+
+Please enter string : 
 google
 Frequency of each character lexicographically  : {e=1, g=2, l=1, o=2}
 -------------------------------------------------------------------------
-Highest frequency character lexicographically is 'g' with frequency 2.*/
+Highest frequency character lexicographically is 'g' with frequency 2.
+
+*/
