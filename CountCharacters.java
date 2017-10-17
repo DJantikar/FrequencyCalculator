@@ -10,7 +10,7 @@ import java.util.TreeMap;
  * Problem : Count characters' frequency in given string and also find highest frequency character lexicographically.
  * 
  * Solution : Parse the given string in linear and compute frequency using TreeMap .
- * 			  To find highest frequency character construct priority queue with comparator to check for same frequency case.
+ * 	      To find highest frequency character construct priority queue with comparator to check for same frequency case.
  * 
  * Time Complexity : O(n) because we are parsing string in linear time
  * Space Complexity : O(n) because we are storing entries in TreeMap and PriorityQueue which is 2*n .Hence O(n).
